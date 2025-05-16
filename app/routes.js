@@ -36,6 +36,6 @@ router.post('/passport-details', function (req, res) {
   if (answer === 'yes') {
     res.redirect('/uk-base')
   } else {
-    res.redirect('/rest-world')
+    res.redirect('/rest-test')
   }
 })
