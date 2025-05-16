@@ -1,0 +1,42 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Do you have a UK passport?
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="passport-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+          <h1 class="govuk-fieldset__heading">
+            Do you have a UK passport?
+          </h1>
+        </legend>
+
+        <span id="passport-hint" class="govuk-hint">
+          Select one option.
+        </span>
+
+        <div class="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="yes" name="passport" type="radio" value="yes">
+            <label class="govuk-label govuk-radios__label" for="yes">
+              Yes
+            </label>
+          </div>
+
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="no" name="passport" type="radio" value="no">
+            <label class="govuk-label govuk-radios__label" for="no">
+              No
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    <button class="govuk-button" data-module="govuk-button">Continue</button>
+  </form>
+{% endblock %}
