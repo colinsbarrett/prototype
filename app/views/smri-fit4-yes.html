@@ -1,0 +1,47 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+ Is everybody with SMRI at Radienteco Ltd fit and proper?– GOV.UK
+{% endblock %}
+
+{% block content %}
+
+  <span class="govuk-caption-l">People with SMRI at Radienteco Ltd</span>
+
+  <h1 class="govuk-heading-l">Is everybody with SMRI at Radienteco Ltd fit and proper?</h1>
+
+   <form method="post">
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="smri-hint">
+        
+    <p class="govuk-body">
+    If your answer is 'No', we will contact you via email for further information.
+    </p>
+    
+    <p class="govuk-body">
+    In situations where the person with SMRI may be uncomfortable relaying sensitive information through you, it's possible to nominate an alternative contact within your organisation. For example a HR manager.
+    </p>
+
+        <div class="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="yes" name="smri4" type="radio" value="yes">
+            <label class="govuk-label govuk-radios__label" for="yes">
+              Yes
+            </label>
+          </div>
+
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="no" name="smri4" type="radio" value="no">
+            <label class="govuk-label govuk-radios__label" for="no">
+              No
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    <button class="govuk-button" data-module="govuk-button">Continue</button>
+  </form>
+
+{% endblock %}
